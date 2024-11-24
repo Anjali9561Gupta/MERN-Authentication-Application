@@ -7,7 +7,7 @@ const AdminPanel = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       const token = localStorage.getItem('token');
-      const response = await axios.get('http://localhost:5000/api/admin/users', {
+      const response = await axios.get('https://mern-authentication-application-3vxj.onrender.com/api/admin/users', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setUsers(response.data);

@@ -21,7 +21,7 @@ const RegistrationPage = () => {
 
     try {
       
-      const response = await axios.post('http://localhost:5000/api/auth/register', userData);
+      const response = await axios.post('https://mern-authentication-application-3vxj.onrender.com/api/auth/register', userData);
 
       // Handle successful registration
       console.log('User registered successfully', response.data);

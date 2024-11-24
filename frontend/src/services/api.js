@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:5000/auth',
+    baseURL: 'https://mern-authentication-application-3vxj.onrender.com/auth',
     headers: {
         'Content-Type': 'application/json',
     },
